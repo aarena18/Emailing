@@ -1,8 +1,17 @@
 <template>
   <nav>
-    <router-link to="/before-class">Before Class</router-link> |
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">Présence</router-link>
+    <div class="logo">
+      <img src="./assets/logoS.png" alt="Logo">
+      <h1>Course Portal</h1>
+    </div>
+    <ul>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/about">Course Attendance</router-link></li>
+      <li><router-link to="/before-class">Course Syllabus</router-link></li>
+      <li><router-link to="/teachers">Teacher Information</router-link></li>
+      <li><router-link to="/contact">Contact Us</router-link></li>
+      <li><a href="/profile">Login</a></li>
+    </ul>
   </nav>
   <router-view/>
 </template>
@@ -14,18 +23,47 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
 
 nav {
-  padding: 30px;
+  background-color: #ff8400;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+.logo img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin-right: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #0056b3;
 }
 </style>
