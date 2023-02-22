@@ -1,42 +1,45 @@
 <template>
-  <div>
-    <h2>Login</h2>
-    <form @submit.prevent="login">
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="loginForm.email" required />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="loginForm.password" required />
-      </div>
-      <button type="submit">Login</button>
-    </form>
-
-    <h2>Register</h2>
-    <form @submit.prevent="register">
-      <div>
-        <label>Name:</label>
-        <input type="text" v-model="registerForm.name" required />
-      </div>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="registerForm.email" required />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="registerForm.password" required />
-      </div>
-      <div>
-        <label>Confirm Password:</label>
-        <input
-          type="password"
-          v-model="registerForm.confirmPassword"
-          required
-        />
-      </div>
-      <button type="submit">Register</button>
-    </form>
+  <div class="container">
+    <div class="form">
+      <h2>Login</h2>
+      <form @submit.prevent="login">
+        <div>
+          <label>Email:</label>
+          <input type="email" v-model="loginForm.email" required />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" v-model="loginForm.password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <div class="form2">
+      <h2>Register</h2>
+      <form @submit.prevent="register">
+        <div>
+          <label>Name:</label>
+          <input type="text" v-model="registerForm.name" required />
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" v-model="registerForm.email" required />
+        </div>
+        <div>
+          <label>Password:</label>
+          <input type="password" v-model="registerForm.password" required />
+        </div>
+        <div>
+          <label>Confirm Password:</label>
+          <input
+            type="password"
+            v-model="registerForm.confirmPassword"
+            required
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -77,10 +80,26 @@ export default {
 </script>
 
 <style scoped>
-form {
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  
+}
+
+.form2 {
+  width: 50%;
+  height: 100vh;
+  background-color: rgb(215, 213, 213);
+}
+.form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  width: 25%;
+  height: 100vh;
+
 }
 
 div {
@@ -101,7 +120,7 @@ input {
 
 button {
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: #ff8400;
   color: #fff;
   border: none;
   border-radius: 5px;

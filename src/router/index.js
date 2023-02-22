@@ -18,13 +18,10 @@ const routes = [
   {
     path: '/profile',
     name: 'profile',
+    component: () => import(/* webpackChunkName: "profile" */ '../views/ProfileView.vue')
   },
-  {
-    path: '/before-class',
-    name: 'before-class',
-  },{
-
-  }
+ 
+  
 
 ]
 
