@@ -1,0 +1,51 @@
+<mjml>
+  <mj-head>
+    <mj-style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap%27');
+    </mj-style>
+    <mj-title>Validation de présence en classe pour l'axe Coding et Digital Innovation</mj-title>
+  </mj-head>
+  <mj-body background-color="white">
+    <mj-section padding="0" background-color="#F07D00">
+        <mj-column vertical-align="middle">
+            <mj-text color="white">
+                Axe Coding & Digital Innovation
+            </mj-text>
+        </mj-column>
+        <mj-column vertical-align="middle">
+            <mj-image src=https://www.iim.fr/ecole-web/wp-content/themes/iim/img/footer-iim.png width="60px" alt="Example Image" align="right"/>
+        </mj-column>
+
+    </mj-section>
+    <mj-section background-color="white">
+        <mj-column vertical-align="middle">
+            <mj-text font-family="Roboto, sans-serif" line-height="15px">
+                Chers élèves de l'axe Coding et Digital Innovation <br>
+                Nous souhaitons vous informer qu'une validation de présence en classe est prévue pour aujourd'hui. <br> 
+                Nous comptons sur votre présence afin de maintenir un suivi régulier de votre présence en cours. <br>
+                Ainsi, nous vous invitons à cliquer sur le bouton ci-dessous dans les 15 prochaines minutes pour confirmer votre présence à l'appel en ligne.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+
+    <mj-section>
+        <mj-column vertical-align="middle">
+            <mj-button href="[Valider ma présence]" background-color="orange" border="black 2px solid">Valider ma présence</mj-button>
+        </mj-column>
+    </mj-section>
+    <mj-section background-color="white">
+        <mj-column vertical-align="middle">
+            <mj-text font-family="Roboto, sans-serif" line-height="15px">
+                Il est important de noter que cette validation de présence est obligatoire et vous permettra de vous assurer que vous ne manquez aucune information importante concernant les cours à venir. <br>
+                En outre, elle permettra également aux enseignants de mesurer votre participation et d'ajuster leur méthode d'enseignement en conséquence. <br>
+                Nous vous remercions de votre coopération et nous sommes impatients de vous retrouver en classe pour discuter des dernières tendances en matière de programmation et d'innovation numérique.
+            </mj-text>
+            <mj-text font-family="Roboto, sans-serif">
+                Cordialement,
+                <br />
+                Le staff Coding &amp; Digital Innovation de l'IIM.
+            </mj-text>
+        </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
