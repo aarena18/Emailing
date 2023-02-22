@@ -10,7 +10,7 @@
       <li><router-link to="/before-class">Course Syllabus</router-link></li>
       <li><router-link to="/teachers">Teacher Information</router-link></li>
       <li><router-link to="/contact">Contact Us</router-link></li>
-      <li><a href="/profile">Login</a></li>
+      <li><router-link to="/profile">Login</router-link></li>
     </ul>
   </nav>
   <router-view/>
@@ -70,6 +70,6 @@ a {
 }
 
 a:hover {
-  background-color: #0056b3;
+  background-color: #ff8c10;
 }
 </style>

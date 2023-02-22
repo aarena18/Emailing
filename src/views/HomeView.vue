@@ -7,12 +7,12 @@
         <div class="col">
           <h3>Course Attendance</h3>
           <p>With our attendance management system, you can easily keep track of your course attendance records, view your attendance history, and get alerts for any missed classes.</p>
-          <router-link to="/attendance">Manage Attendance</router-link>
+          <router-link to="/about">Manage Attendance</router-link>
         </div>
         <div class="col">
           <h3>Course Syllabus</h3>
           <p>Our course syllabus portal provides you with access to detailed information about your courses, including course objectives, topics, and assessments.</p>
-          <router-link to="/syllabus">View Syllabus</router-link>
+          <router-link to="/before-class">View Syllabus</router-link>
         </div>
         <div class="col">
           <h3>Teacher Information</h3>
@@ -55,5 +55,13 @@ h2, h3 {
 
 p {
   margin: 0 0 20px 0;
+}
+
+a{
+  color: #ff8400;
+}
+
+a:hover {
+  color: #ffffff;
 }
 </style>
