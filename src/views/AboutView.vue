@@ -13,12 +13,14 @@
       </div>
       <div class="form-group">
         <label for="className" class="form-label">Class Name:</label>
-        <input
-          type="text"
-          id="className"
-          v-model="className"
-          class="form-input"
-        />
+        <select id="className" v-model="attendance" class="form-input">
+          <option value="CDI1">CDI1</option>
+          <option value="CDI2">CDI2</option>
+          <option value="CD1">CD1</option>
+          <option value="CD2">CD2</option>
+          <option value="JV1">JV1</option>
+          <option value="JV2">JV2</option>
+        </select>
       </div>
       <div class="form-group">
         <label for="date" class="form-label">Date:</label>
@@ -47,6 +49,9 @@
 .attendance-form {
   margin: 20px;
   padding: 20px;
+  width: 375px;
+  margin: 0 auto;
+  margin-top: 50px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background-color: #fff;
@@ -129,10 +134,7 @@ select.form-input {
 export default {
   data() {
     return {
-      studentName: "",
-      className: "",
-      date: "",
-      attendance: "present",
+
     };
   },
   methods: {
