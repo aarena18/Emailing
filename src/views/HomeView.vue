@@ -56,4 +56,12 @@ h2, h3 {
 p {
   margin: 0 0 20px 0;
 }
+
+a{
+  color: #ff8400;
+}
+
+a:hover {
+  color: #ffffff;
+}
 </style>
